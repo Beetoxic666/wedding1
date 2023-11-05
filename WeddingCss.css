@@ -1,0 +1,633 @@
+:root {
+    --green : #009252;
+    --background1 : rgb(197, 221, 177);
+    --background2 : rgba(223, 255, 197, 0.568);
+    --background3 : rgb(226, 241, 212);
+    --sahadow : 0 2px 2px rgb(0, 0, 0 / 0.5);
+    --font : 'Parisienne', cursive;;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Marcellus', serif;;
+    font-weight: 400;
+    color: black;
+}
+
+body{
+    background: #000;
+    display: flex;
+}
+
+.big-continer{
+    width: 700px;
+    height: 100vh;
+    margin: auto;
+}
+
+
+/* Navbar Start */
+.navbar-wedding {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    /* position: absolute; */
+    display: flex;
+    background-color: var(--background3);
+    justify-content: space-around;
+}
+.navbar-wedding button{
+    border-radius: 10px;
+}
+.navbar-wedding button:hover{
+    background-color: transparent !important;
+}
+.navbar-wedding span:hover{
+    color: white !important;
+    transition: .3s;
+}
+/* Navbar End */
+
+
+/* Home Start */
+.continer-home {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, var(--background1), var(--background3)) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+.text-home-head h2{
+    color: var(--green);
+}
+.text-home-mempelai h1{
+    color: var(--green);
+    font-family: var(--font);
+    font-size: 4rem;
+}
+.text-home-mempelai h1:nth-child(1) {
+    margin-bottom: -20px;
+    padding-right: 50px;
+}
+.text-home-mempelai h6 {
+    font-size: 2rem;
+    font-family: var(--font);
+}
+.text-home-mempelai h1:nth-child(3) {
+    margin-top: -15px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+}
+.text-home-bottom p:nth-child(1) {
+    margin-bottom: -5px;
+}
+.text-home-bottom h2{
+    margin-bottom: 20px;
+    color: var(--green);
+}
+/* Home End */
+
+
+/* Quote Start */
+.continer-quote {
+    background: linear-gradient(180deg, var(--background3), var(--background1), var(--background3)) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.continer-quote p:nth-child(2) {
+    color: var(--green);
+}
+/* Quote End */
+
+
+/* Mempelai Start */
+.continer-mempelai {
+    width: 100%;
+    /* height: 200vh; */
+    background: linear-gradient(180deg, var(--background3), var(--background1), var(--background3)) ;
+    padding-bottom: 100px;
+}
+.continer-mempelai > h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--green);
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.cont-mempelai {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.mempelai-pria{
+    margin-bottom: 50px;
+}
+.mempelai-pria .img-mempelai,
+.mempelai-wanita .img-mempelai {
+    height: 250px;
+    background: red ;
+    background: url(asset/img/test3.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; 
+    margin-bottom: 20px;
+}
+.nama-mempelai {
+    text-align: center;
+    color: var(--green);
+    font-family: var(--font);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.ket-mempelai {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.ket-mempelai p:nth-child(2) {
+    margin-bottom: 1px;
+    /* font-weight: bold; */
+    color: var(--green);
+    z-index: 2;
+}
+.ket-mempelai p:nth-child(3) {
+    margin-bottom: 1px;
+    z-index: 2;
+}
+.ket-mempelai p:nth-child(4) {
+    /* font-weight: bold; */
+    /* z-index: 2; */
+    color: var(--green);
+}
+
+/* Mempelai End */
+
+
+/* Jadwal Start */
+.continer-jadwal {
+    width: 100%;
+    height: 160vh;
+    background: linear-gradient(180deg, var(--background3), var(--background1), var(--background3)) ;
+}
+.jadwal-head {
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.jadwal-head h2{
+    color: var(--green);
+    font-size: 2rem;
+    text-align: center;
+    font-style: italic;
+}
+.jadwal-head p{
+    margin-top: 10px ;
+    padding: 0 10px 0 10px ;
+    text-align: center;
+}
+.continer-card-jadwal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.cont-card-jadwal {
+    background-color: transparent;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 20px;
+}
+.card-jadwal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-icon-jadwal1 {
+    width: 40px;
+    height: 40px;
+    background: url(asset/img/wedding-rings.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: jadpop 1.5s alternate ease-in-out infinite;
+}
+.card-icon-jadwal2 {
+    width: 40px;
+    height: 40px;
+    background: url(asset/img/flower-bouquet.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: jadpop 1.5s alternate ease-in-out infinite;
+}
+
+@keyframes jadpop {
+    to {
+        transform: scale(1.1);
+    }
+}
+.card-jadwal h2{
+    color: var(--green);
+}
+.waktu-1 {
+    color: var(--green);
+    margin-bottom: -1px;
+}
+.waktu-2 {
+    color: var(--green);
+    margin-bottom: -1px;
+}
+.lokasi-1{
+    color: var(--green);
+    font-size: 1.5rem;
+}
+.lokasi-2{
+    color: var(--green);
+    font-size: 1.5rem;
+}
+/* Jadwal End */
+
+
+/* Menghitung Start */
+.continer-menghitungH{
+    background: linear-gradient(180deg, var(--background3), var(--background1), var(--background3)) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.continer-menghitungH > h2 {
+    color: var(--green);
+    font-size: 2rem;
+    font-style: italic;
+}
+/* Menghitung End */
+
+
+/* Galleri Start */
+.continer-galleri {
+    height: 100vh;
+    background: linear-gradient(180deg, var(--background3), var(--background1), var(--background3)) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.continer-galleri h2 {
+    color: var(--green);
+    font-size: 2rem;
+    z-index: 1;
+    font-style: italic;
+}
+.swiper {
+    width: 80%;
+    height: 500px;
+}
+
+.img-slide img {
+    width: 100%; /* Gambar mengambil 100% lebar dari swiper-slide */
+    height: 100%; /* Gambar mengambil 100% tinggi dari swiper-slide */
+    object-fit: cover; /* Untuk memastikan gambar mengisi seluruh area tanpa memutar-rutarkan gambar */
+}
+.sb {
+    color: var(--green) !important;
+}
+/* .swiper-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+/* Galleri End */
+
+
+/* Ucapan Start */
+.continer-ucapan {
+    background: linear-gradient(180deg, var(--background3), var(--background1), var(--background3)) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+}
+.continer-ucapan h2 {
+    color: var(--green);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+/* Ucapan End */
+
+/* Kado Start */
+.continer-kado {
+    background: linear-gradient(180deg, var(--background3), var(--background1), var(--background3)) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.continer-kado h2 {
+    color: var(--green);
+    font-size: 2rem;
+}
+.cont-rek{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cont-rek img{
+    width: 100px;
+    height: 70px;
+}
+.norek h3:nth-child(1) {
+    color: var(--green);
+}
+.norek button {
+    text-decoration: none;
+}
+/* Kado End */
+
+/* Thanks Start */
+.continer-thanks {
+    background: linear-gradient(180deg, var(--background3), var(--background1), var(--background3)) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .continer-thanks::before {
+    content: "";
+    position: absolute;
+    transform: scale(1.9);
+    background: url(asset/img/test8.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;  
+    bottom: 0;
+    left: 0;
+    animation: inout 1.5s alternate ease-in-out infinite;
+}
+.continer-thanks::after {
+    content: "";
+    position: absolute;
+    transform: scale(1.9);
+    background: url(asset/img/test7.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    bottom: 0;
+    right: 0;
+    animation: inout 1.5s alternate ease-in-out infinite;
+} */
+.continer-thanks p:nth-child(1) {
+    margin-bottom: 5px;
+}
+.continer-thanks h2,
+.continer-thanks h3{
+    color: var(--green);
+}
+.continer-thanks > div {
+    margin-top: 50px;
+}
+.continer-thanks h2 {
+    font-size: 2rem;
+    font-family: var(--font);
+}
+.penutup h2 {
+    font-size: 3rem;
+}
+/* Thanks End */
+
+
+
+.leave1,
+.leave2,
+.leave3,
+.leave4,
+.leave5 {
+    opacity: .3;
+}
+
+.leave1 {
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    top: -100px;
+    left: 50px;
+    background: url(asset/img/LEAVES1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: leavedown 5s ease-in-out  infinite;
+    animation-delay: 1.5s;
+}
+.leave2 {
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    top: -100px;
+    left: 165px;
+    background: url(asset/img/LEAVES2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: leavedown 5s ease-in-out infinite;
+    animation-delay: .5s;
+}
+.leave3 {
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    top: -100px;
+    right: 50px;
+    background: url(asset/img/LEAVES1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: leavedown 5s ease-in-out infinite;
+    animation-delay: 2s;
+}
+.leave4 {
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    top: -100px;
+    left: 100px;
+    background: url(asset/img/LEAVES2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: leavedown 5s ease-in-out infinite;
+    animation-delay: 3s;
+}
+.leave5 {
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    top: -100px;
+    right: 120px;
+    background: url(asset/img/LEAVES3.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: leavedown 5s ease-in-out infinite;
+    animation-delay: 4s;
+}
+
+
+.leave1-mempelai,
+.leave2-mempelai,
+.leave3-mempelai,
+.leave4-mempelai,
+.leave5-mempelai {
+    opacity: .3;
+}
+
+.leave1-mempelai {
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    top: -100px;
+    left: 50px;
+    background: url(asset/img/LEAVES1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: leavedown-mempelai 5s ease-in-out  infinite;
+    animation-delay: 1.5s;
+}
+.leave2-mempelai {
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    top: -100px;
+    left: 165px;
+    background: url(asset/img/LEAVES2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: leavedown-mempelai 5s ease-in-out infinite;
+    animation-delay: .5s;
+}
+.leave3-mempelai {
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    top: -100px;
+    right: 50px;
+    background: url(asset/img/LEAVES1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: leavedown-mempelai 5s ease-in-out infinite;
+    animation-delay: 2s;
+}
+.leave4-mempelai {
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    top: -100px;
+    left: 100px;
+    background: url(asset/img/LEAVES2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: leavedown-mempelai 5s ease-in-out infinite;
+    animation-delay: 3s;
+}
+.leave5-mempelai {
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    top: -100px;
+    right: 120px;
+    background: url(asset/img/LEAVES3.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: leavedown-mempelai 5s ease-in-out infinite;
+    animation-delay: 4s;
+}
+
+
+.img-top-right {
+    position: absolute;
+    top: -90px;
+    right: -90px;
+    z-index: 1;
+    animation: forImg 1.5s alternate ease-in-out infinite;
+}
+.img-bottom-left {
+    position: absolute;
+    bottom: -50px;
+    left: -100px;
+    z-index: 1;
+    animation: forImg 1.5s alternate ease-in-out infinite;
+}
+.img-top-left {
+    position: absolute;
+    top: -90px;
+    left: -90px;
+    z-index: 1;
+    animation: forImg 1.5s alternate ease-in-out infinite;
+}
+.img-bottom-right {
+    position: absolute;
+    bottom: -50px;
+    right: -100px;
+    z-index: 1;
+    animation: forImg 1.5s alternate ease-in-out infinite;
+}
+
+/* Animasi */
+@keyframes inout {
+    to {
+        transform: scale(2);
+    }
+}
+
+@keyframes forImg {
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes leavedown {
+    to {
+        transform: translate(0, 900px);
+    }
+}
+@keyframes leavedown-mempelai {
+    to {
+        transform: translate(0, 2000px);
+    }
+}
+
+@media (max-width: 768px) {
+    body{
+        display: block;
+        background-color: white;
+    }
+    .big-continer{
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+}
