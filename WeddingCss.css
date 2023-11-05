@@ -12,7 +12,7 @@
     box-sizing: border-box;
     font-family: 'Marcellus', serif;;
     font-weight: 400;
-    color: black;
+    color: white;
 }
 
 body{
@@ -94,6 +94,9 @@ body{
 .text-home-bottom h2{
     margin-bottom: 20px;
     color: var(--green);
+}
+.btn-bukaU{
+    background-color: var(--green);
 }
 /* Home End */
 
